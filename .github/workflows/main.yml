@@ -1,4 +1,4 @@
-name: TOOLBOXLAP
+name: Avica
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ jobs:
     name: Start Building...
     runs-on: windows-latest
     timeout-minutes: 360
-    
+
     steps:
       - name: Downloading & Installing Essentials
         run: |
@@ -17,6 +17,3 @@ jobs:
 
       - name: Show Website
         run: cmd /c show.bat
-
-      - name: Time Counter
-        run: cmd /c loop.bat
